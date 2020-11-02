@@ -5,8 +5,8 @@ Author: Feike Li
 Runtime environment:Wampserver3.23/ PHP 7.3.21/ Apache 2.4.46/ Mysql 5.7.31
 
 Testing Result: 100% 
-    - [testing screenshots]()
-    - tested browers: Chrome,Firefox,IE,Edge
+- [testing results screenshots](https://github.com/lifeike/Fresh_Focus_Media_Code_Assessment/tree/master/screenshots)
+- tested browers: Chrome,Firefox,IE,Edge
 
 How to Run:
 - Mysql name: 'root' password: '' (default)
