@@ -1,0 +1,43 @@
+body,button,input[type="submit"]{
+	background-image: linear-gradient(#888,#fff,#888);
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+form{
+	width: 70%;
+	min-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow:  1px 1px 1px 1px #000;
+}
+input,select{
+	height: 28px;
+	padding-left: 5px;
+}
+.table{
+	width:100%;
+}
+.table select,.table input[type='text']{
+	width: 100%;
+}
+.table tr td:nth-child(1){
+	text-align: right;
+	padding-right: 10px;
+	width: 20%;
+}
+.table tr td:nth-child(2){
+	text-align: left;
+	width: 80%;
+}
+button,input[type="submit"]{
+	border: 1px solid #888;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+}
+.hide{
+	display: none;
+}

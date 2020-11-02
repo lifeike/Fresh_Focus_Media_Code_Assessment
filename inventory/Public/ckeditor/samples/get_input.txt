@@ -1,0 +1,2 @@
+CKEDITOR.instances.editor.document.$.body.innerHTML
+CKEDITOR.instances.textarea.document.$.body.innerHTML

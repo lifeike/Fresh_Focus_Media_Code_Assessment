@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inventory</title>
+	<link rel="stylesheet" href="./Public/index.css">
+</head>
+<body>
+	<form id="form" action="#">
+		<table class="table" cellspacing="10">
+			<tr>
+				<td>Order Date:</td>
+				<td><input type="text" id="subscription_date" placeholder="2016-10-11" style="width: 25%;"></td>
+			</tr>
+			<tr>
+				<td>Customer <i style="color:red;">*</i> :</td>
+				<td>
+					<select name="customer" id="customer">
+						<option value="0">Choose Customer...</option>
+						<option value="Feeco">Feeco</option>
+						<option value="Lana">Lana</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Product Pricing <i style="color:red;">*</i> :</td>
+				<td>
+					<select name="please" id="please">
+						<option value="0">Please Select</option>
+						<option value="retail_price">retail price</option>
+						<option value="wholesale_price">wholesale price</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+
+		<table style="margin: 0 auto; text-align: center;">
+			<tr>
+				<th>Inventory</th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Category</td>
+				<td>Part#</td>
+				<td>Product</td>
+				<td>Price</td>
+				<td>Quantity</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="category" id="category">
+						<option value="0">Choose a Category...</option>
+					</select>
+				</td>
+				<td>
+					<select name="" id="part">
+						<option value="0">Choose a Part#...</option>
+					</select>
+				</td>
+				<td>
+					<select name="" id="product">
+						<option value="0">Choose a Product...</option>
+					</select>
+				</td>
+				<td><input type="text" disabled="disabled" id="price" value="0"></td>
+				<td><input type="text" id="quantity" value="0"></td>
+			</tr>
+			<tr align="left">
+				<td>
+					<!-- add new product to the list -->
+					<button id="btn_add">Add</button>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+			
+		<table  class="hide" id="list" style="margin: 0 auto; text-align: center;">
+			<tr>
+				<th>product</th>
+				<th>quantity</th>
+				<th>price</th>
+				<th>location</th>
+			</tr>
+		</table>
+
+		<table class="table" cellspacing="10">
+			<tr>
+				<td>Sub-Total <i style="color:red;">*</i> :</td>
+				<td><input type="text" id="sub_total" placeholder="0.00"></td>
+			</tr>
+			<tr>
+				<td>Discount Type:</td>
+				<td>
+					<label><input type="radio" name="discount" value="%" checked="checked"> %</label>
+					<label><input type="radio" name="discount" value="$" > $</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Discount Value:</td>
+				<td><input type="text" id="discount_val" placeholder="0"></td>
+			</tr>
+			<tr>
+				<td>Total After Discount:</td>
+				<td><input type="text" id="discount_after_total" placeholder="0.00"></td>
+			</tr>
+			<tr>
+				<td>Total Before Tax:</td>
+				<td><input type="text" id="discount_before_total" placeholder="0.00"></td>
+			</tr>
+			<tr>
+				<td>GST(%): <br> <i>[123]</i></td>
+				<td><input type="text" placeholder="5" id="gst"></td>
+			</tr>
+			<tr>
+				<td>Tax Price($):</td>
+				<td><input type="text" id="tax_price" placeholder="0.00"></td>
+			</tr>
+			<tr>
+				<td>Total Price  <i style="color:red;">*</i> :</td>
+				<td><input type="text" id="total_price" required="required" placeholder="0.00"></td>
+			</tr>
+			<tr>
+				<td>Payment Type  <i style="color:red;">*</i> :</td>
+				<td>
+					<select name="" id="payment_type">
+						<option value="0">Choose a　Type...</option>
+						<option value="pay pal">pay pal</option>
+						<option value="debit card">debit card</option>
+						<option value="credit card">credit card</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:top; ">Comment:</td>
+				<td>
+					 <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Created/Sold By:</td>
+				<td><input type="text" disabled="disabled" id="payment" value="Kenneth Bond"></td>
+			</tr>
+			<tr>
+				<td>Ship Date:</td>
+				<td><input type="text" id="ship_date" placeholder="2016-10-11" disabled="disabled" style="width: 25%;"></td>
+			</tr>
+			<tr>
+				<td>Required Fields  <i style="color:red;">*</i> </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="submit" id="submit" value="Submit"></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+	<script src="./Public/jquery.min.js"></script>
+	<script src="./Public/index.js"></script>
+	<!-- import ckeditor plugin -->
+	<script src="./Public/ckeditor/ckeditor.js"></script>
+	<script>
+		// use ckeditor modify textfiled
+		CKEDITOR.replace('textarea');
+	</script>
+</body>
+</html>
