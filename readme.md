@@ -2,15 +2,17 @@
 
 Author: Feike Li
 
-Runtime environment:
+Runtime environment: PHP 7.3.21/ Apache 2.4.46/ Mysql 5.7.31
 
 IDE:
 
-Testing Result: 100% [testing screenshots]()
+Testing Result: 100% 
+    - [testing screenshots]()
+    - tested browers: Chrome,Firefox,IE,Edge
 
 How to Run:
 - Mysql name: 'root' password: ''(default)
-- Import inventory.sql into Mysql
+- Import inventory.sql into PHPMYADMIN
 - localhost in the browser
 
 Important Explaination:
